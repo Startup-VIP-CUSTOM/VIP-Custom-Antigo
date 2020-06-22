@@ -1,0 +1,38 @@
+.itens-personalizacao{
+    position: fixed;
+    top: 92%;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid gray;
+}
+.item{
+    width: 18%;
+    background-color: gray;
+    color: white;
+    margin-top: 2%;
+    font-size: 18pt;
+    border-radius: 10px;
+    margin-left: 1%;
+}
+.finalizacao{
+    width: 15%;
+    background-color: gray;
+    color: white;
+    font-size: 15pt;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 2%;
+}
+#img{
+    height: 90%;
+}
+.tamImg {
+    width: 100%x;
+    height: 70%;
+}
+.tmbt {
+    width: 32%;
+    background-color: gray;
+    color: white;
+    height: 10%;
+}

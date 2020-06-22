@@ -1,0 +1,61 @@
+body{
+    height: 420px;
+    overflow-y: scroll;
+}
+
+div{
+    margin-top: 5%;
+    margin-bottom: 20%;
+    font-size: 15pt;
+}
+
+div.descricao-pagamento{
+    padding-top: 10%;
+}
+
+input{
+    margin-left: 5%;
+}
+
+ion-input{
+    font-size: 12pt;
+    border: 1px solid black;
+}
+
+ion-label.dado{
+    font-size: 12pt;
+}
+
+ion-checkbox{
+    margin-left: 15px;
+}
+
+.total{
+    font-size: 12pt;
+    margin-left: 40%;
+    margin-top: 40%;
+}
+
+label{
+    margin-left: 5%;
+}
+
+div.finalizar-compra{
+    position: fixed;
+    top: 87%;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid gray;
+}
+
+.item{
+    float: right;
+    height: 40px;
+    margin-top: 2%;
+    margin-right: 10%;
+    width: 35%;
+    font-size: 10pt;
+    border-radius: 15px;
+    background-color: gray;
+    color: white;
+}

@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cadastro Cliente</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content fullscreen="true">
+  <ion-item>
+    <ion-label position="floating">Nome completo</ion-label>
+    <ion-input [(ngModel)] = "contato.nome"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">E-mail</ion-label>
+    <ion-input type="email" [(ngModel)] = "contato.email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">CPF</ion-label>
+    <ion-input [(ngModel)] = "contato.cpf"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Cidade</ion-label>
+    <ion-input [(ngModel)] = "contato.cidade"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Crie uma senha</ion-label>
+    <ion-input type="password" [(ngModel)] = "contato.senha"></ion-input>
+  </ion-item>
+    <ion-button expand="block" color="success" (click) = "registrar()">OK</ion-button>
+    <ion-button expand="block" routerLink="/loja-cliente" color="light">VOLTAR</ion-button>
+</ion-content>

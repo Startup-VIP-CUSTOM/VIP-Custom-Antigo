@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-menu-button  slot="start">
+    </ion-menu-button>
+    <ion-title>FINALIZAR PEDIDO</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="opcoes">
+    <div>
+      <button class="loja">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+      <p class="info">
+          LOJA X 
+          <br>
+          PREÇO : R$ XX,XX 
+      </p>
+    </div>
+    <div>
+      <button  class="loja">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+      <p class="info">
+          LOJA Y
+          <br>
+          PREÇO : R$ XX,XX 
+      </p>
+    </div>
+  </div>
+  <div class="botoes">
+    <button class="confirm" [routerLink]="['/pagamento']">
+      FINALIZAR COMPRA
+    </button>
+    <button class="confirm"[routerLink]="['/modelo']">
+      VOLTAR
+    </button>
+  </div>
+</ion-content>

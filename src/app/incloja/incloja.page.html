@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>MINHA LOJA</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-label class="h1Fonte">Gerencie seus produtos e pedidos</ion-label>
+  <div class="organizacao">
+    <img id="image" src="assets/img/loja-semfundo.png">
+    <p>
+      <strong>KANESHI CUSTOMIZADOS</strong>
+    </p>
+  </div>
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+
+      <ion-tab-button tab="lucros" routerLink="/lucroloja">
+        <ion-icon name="cash-outline"></ion-icon>
+        <ion-label>Lucros</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="produtos" routerLink="/produtos">
+        <ion-icon name="cube-outline"></ion-icon>
+        <ion-label>Produtos</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="pedidos" routerLink="/pedidosloja">
+        <ion-icon name="document-attach-outline" style="font-size: 30pt;"></ion-icon>
+        <ion-label>Pedidos</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="perfil" routerLink="/perfil-loja">
+        <ion-icon name="person-outline"></ion-icon>
+        <ion-label>Perfil</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>

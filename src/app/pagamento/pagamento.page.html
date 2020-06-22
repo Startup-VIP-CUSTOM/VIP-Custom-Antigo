@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-menu-button  slot="start">
+    </ion-menu-button>
+    <ion-title>Pagamento</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <body>
+    <div>
+      <ion-icon name="card-outline" style="font-size: 50pt; float: left;"></ion-icon>
+      <div class="descricao-pagamento">
+        <details>
+          <summary>Cartão de crédito</summary>
+          <ion-grid>
+            <ion-row>
+              <ion-cow>
+                <ion-label position="stacked" class="dado">Nome do titular<ion-text color="danger">*</ion-text></ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-cow>
+              <ion-cow>
+                <ion-label position="stacked" class="dado">Número do cartão<ion-text color="danger">*</ion-text></ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-cow>
+            </ion-row>
+            <ion-row>
+              <ion-cow>
+                <ion-label position="stacked" class="dado">Data de vencimento<ion-text color="danger">*</ion-text></ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-cow>
+              <ion-cow>
+                <ion-label position="stacked" class="dado">Código de segurança<ion-text color="danger">*</ion-text></ion-label>
+                <ion-input type="text"></ion-input>
+                <ion-button routerLink="/comprado">
+                  OK
+                </ion-button>
+              </ion-cow>
+            </ion-row>
+          </ion-grid>
+        </details>
+      </div>
+    </div>
+    <div>
+      <ion-icon name="cash-outline" style="font-size: 50pt; float: left;"></ion-icon>
+      <div class="descricao-pagamento">
+        <details>
+          <summary>Boleto</summary>
+          <ion-button routerLink="/boleto">
+            Imprimir
+          </ion-button>
+        </details>
+      </div>
+    </div>
+    <div>
+      <ion-label>Receber em casa</ion-label>
+      <ion-checkbox color="medium" checked slot="start"></ion-checkbox>
+    </div>
+    <div class="total"> 
+      <strong>TOTAL:</strong> R$ XX,XX
+    </div>
+  </body>
+
+  <div class="finalizar-compra">
+    <button class="item" [routerLink]="['/modelo']">
+      CONCLUIR
+    </button>
+    <button class="item" [routerLink]="['/escolherloja']">
+      CANCELAR
+    </button>
+  </div>
+  
+</ion-content>
